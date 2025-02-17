@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        th, td {
+            text-align: left;
+            padding: 5px;
+        }
+        .table-container {
+            display: inline-block;
+            border: 2px solid black;
+            padding: 15px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .table-title {
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="table-container">
+            <span class="table-title">필수항목</span>
+            <table border="1">
+                <tr>
+                    <th>아이디 :</th>
+                    <td><input type="text" name="id" size="20" required></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 :</th>
+                    <td><input type="password" name="password" size="20" required></td>
+                </tr>
+                <tr>
+                    <th>이름 :</th>
+                    <td><input type="text" name="name" size="20" required></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="table-container">
+            <span class="table-title">선택항목</span>
+            <table border="1">
+                <tr>
+                    <th>전화번호 :</th>
+                    <td><input type="tel" name="tel"></td>
+                </tr>
+                <tr>
+                    <th>주소 :</th>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <th>성별 :</th>
+                    <td>
+                        <input type="radio" name="gender" value="M">남자 &emsp;
+                        <input type="radio" name="gender" value="F">여자
+                    </td>
+                </tr>
+                <tr>
+                    <th>자기소개 :</th>
+                    <td><textarea name="content" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="전송">
+                        <input type="reset" name="reset" value="초기화">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
