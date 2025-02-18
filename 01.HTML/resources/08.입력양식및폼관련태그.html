@@ -134,15 +134,115 @@
 성별 : 
 <input type="radio" name="gender" value="M">남자 &emsp;
 <input type="radio" name="gender" value="F">여자
+</form>
+
+<hr>
+<form action="test.do">
+    <h3>체크박스 (type = checkbox)</h3>
+    <p>
+        - 제시한 여러개의 값들 중 여러개를 선택하고자 할 때
+        - 서버로 value의 값이 전송됨
+    </p>
+    취미 : 
+    <input type="checkbox" name="hobby" value="독서" id="reading"> 
+    <label for="reading">독서</label>
+    <input type="checkbox" name="hobby" value="운동" id="sport"> 
+    <label for="sport">운동</label>
+    <input type="checkbox" name="hobby" value="영화감상" id="movie"> 
+    <label for="movie">영화감상</label>
+<br><br>
+
+<input type="submit">&emsp;
+<input type="reset">
+</form>
+<hr>
+
+<h2>추가적인 input태그 타입</h2>
+<form action="test.do">
+<h3>type = color</h3>
+<p>색상 선택 : <input type="color" name="color"></p>
+<input type="submit">&emsp;
+<input type="reset">
+
+<h3>type = file</h3>
+<p> 첨부하고자 하는 파일을 선택할 수 있는 input 타입</p>
+첨부파일 : <input type="file" name="uploadfile">
+</form>
+<h3>type = hidden</h3>
+<p>특정값을 화면에 노출시키지 않고 서버로 전송해야하는 정보가 있을 때</p>
+페이지 : <input type="hidden" name="pagenum" value="3">
+<br>
+<h3>type = submit | reset | button </h3>
+<input type="submit">   <!--form안의 모든값들을 서버로 전송-->
+<input type="reset">    <!-- form안에 모든값들을 초기화-->
+<input type="button" value="일반버튼">   <!--일반보튼. 사용자가 정의하여 사용-->
+
+<h3>button [type = submit | reset | button]</h3>
+<button type="submit">서버로 전송</button>
+
+<hr>
+<h2>select 태그와 option 태그</h2>
+<p>
+    - 사용자에게 직접 키보드로 입력받는게 아니라 내가 제시한 여러 옵션(목록)중에서 
+    - 전송시 현재 선택된(selected) option값이 전송됨
+</p>
+<form action="test.do">
+    국적 : <select name="national">
+        <option value="ko">한국</option>
+        <option value="us">미국</option>
+        <option value="eu">영국</option>
+        <option value="ru">러시아</option>
+        <option value="etc">기타</option>
+    </select>
+<br><br>
+
+수강신청 <select>
+    <optgroup label="공과대학">
+        <option value="건축공학과">건축공학과</option>
+        <option value="기계공학과">기계공학과</option>
+        <option value="컴퓨터공학과">컴퓨터공학과</option>
+        <option value="화학과">화학과</option>
+    </optgroup>
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </form>
-
-
-
-
-
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
