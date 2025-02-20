@@ -1,0 +1,40 @@
+<style>
+    input:focus {
+        background-color: lightyellow;
+        outline: none; 
+    }
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-width: 3px;
+        overflow :scroll
+    }
+    #test1 {
+        box-shadow: 5px 5px 10px 5px gray;
+        padding: 10px 20px 30px 20px; 
+    }
+</style>
+
+<table border="1">
+<tr>
+    <th>ID :</th>
+    <td><input type="text" name="id" size="20"></td>
+</tr>
+<tr>
+    <th>PW :</th>
+    <td><input type="password" name="password" size="20"></td>
+</tr>
+</table>
+
+<div id="test1">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque eget tortor vel nunc fermentum hendrerit.
+</div>
+
+<tr>
+    <td colspan="2">
+        <input type="submit" name="submit" value="로그인">
+        <input type="reset" name="reset" value="초기화">
+    </td>
+</tr>

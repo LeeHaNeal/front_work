@@ -1,0 +1,32 @@
+header { text-align: center; }
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.poto-item{
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    background: no-repeat center;
+    background-size:cover;
+}
+#poto1{
+    background: url(../image/aaaa.jpg);
+}
+#poto2{background: url(../image/겨울나무.jpg);}
+#poto3{background: url(../image/겨울나ㅜㅁ2.jpg);}
+#poto4{background: url(../image/김장.jpg);}
+#poto5{background: url(../image/삼겹살.jpg);}
+#poto6{background: url(../image/설표.jpg);}
+#poto7{background: url(../image/숲.jpg);}
+#poto8{background: url(../image/여우.jpg);}
+#poto9{background: url(../image/오로라.jpg);}
+#poto10{background: url(../image/moon.jpg);}
+
+h2{
+    color: white; 
+    text-align: center;
+    padding-top: 130px;
+    text-shadow: 1px 1px rgb(35, 33, 33);
+}
