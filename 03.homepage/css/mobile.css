@@ -1,0 +1,119 @@
+/* 기본 스타일 */
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    background: white;
+}
+
+#logo {
+    width: 80%;
+    max-width: 180px;
+}
+
+
+/* 로그인 폼 */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#login input {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+/* 제목 이미지 */
+#titleImg {
+    display: none;
+}
+
+/* 내비게이션 */
+.navi {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;  /* 다른 요소와 겹치지 않게 설정 */
+    z-index: 10;  /* 네비게이션이 위에 오도록 설정 */
+}
+
+.navi a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;  /* 터치 영역을 넓힘 */
+    display: block;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+}
+
+/* 섹션 스타일 */
+section {
+    padding: 15px;
+    margin-top: 10px;  /* 네비게이션과 간격 추가 */
+}
+
+h3, h4 {
+    color: #333;
+}
+
+article {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
+}
+
+/* 이미지 반응형 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 사이드바 */
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+aside img {
+    margin: 10px 0;
+    width: 90%;
+    max-width: 300px;
+}
+
+/* 푸터 */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+}
