@@ -17,7 +17,6 @@
         }
     </style>
 </head>
-<ㅗ>
     <h1>Window 객체</h1>
     <p>
         Window 객체는 자바스크립트의 최상위 객체이며 크게 BOM과 DOM으로 나뉨<br></br>
@@ -216,11 +215,29 @@
     </script>
 
 
+<!-- 
+    <button onclick="buttonTest2();">Click</button>
+    <div id="div2" class="div"></div>
+    <script>
+        const div2=document.getElementById("div2");
+        function buttonTest2(){
+            const animal001={name:"나고양",age:2,hobby:["낮잠자기","뒹굴거리기"]};
+            const animal002={name:"나강아",age:2,hobby:["산책하기","간식먹기"]};
+            const animal003={name:"나너구",age:2,hobby:["사기치기","괴롭히기"]};
+            const animal004={name:"나호랑",age:5,hobby:["소리지르기","째려보기"]};
+            const animal005={name:"나개구",age:3,hobby:["노래부르기","뛰어다니기"]};
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            const animalList=[animal001,animal002,animal003,animal004,animal005];
 
-
-
+            console.log(animalList);
+            
+            let ageSum=animalList.reduce(function(preview, element){
+                return preview + element.age;
+            },0);
+            div2.innerHTML=ageSum;
+        }
+    </> 
+-->
 
 </body>
 </html>
