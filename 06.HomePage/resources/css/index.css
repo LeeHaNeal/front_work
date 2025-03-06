@@ -1,0 +1,240 @@
+  * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body { 
+            font-family: '맑은 고딕', sans-serif; 
+            line-height: 1; 
+        }
+        header {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            padding: 15px 50px;
+            background: #343a40;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: white;
+            z-index: 10;
+        }
+        .logo {
+            flex: 1; 
+            text-align: left;
+        }   
+        .logo img { height: 50px; }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+        nav {
+            flex: 1; 
+            display: flex;
+            justify-content: center; 
+        }
+        .nav > li { position: relative; }
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .nav a:hover { 
+            background: rgba(255, 255, 255, 0.2);
+            color: blue;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 10px;
+            min-width: 150px;
+            z-index: 1000;
+            border-radius: 5px;
+            margin-top: 5px; /* 서브메뉴와 부모 메뉴 간격 조정 */
+        }
+        .submenu li {
+            list-style-type: none; 
+            padding: 8px 0; /* 항목 간격 조정 */
+        }
+        .submenu a {
+            color: #333;
+            padding: 8px 12px;
+            display: block;
+            transition: background 0.3s;
+        }
+        .submenu a:hover {
+            background: #f0f0f0;
+        }
+        .nav li:hover .submenu { display: block; }
+
+        #imgslide {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* 모든 이미지를 숨김 */
+        }
+        .slides img.active {
+            display: block; /* 활성화된 이미지만 보이도록 */
+        }
+
+        /* 화살표 버튼 스타일 */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 30px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        .arrow-left {
+            left: 20px;
+        }
+        .arrow-right {
+            right: 20px;
+        }
+
+        #content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #f8f9fa; /* 배경색 */
+            border-radius: 8px;
+        }
+
+        .notice {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .notice:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .notice h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #343a40;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table th, .table td {
+            padding: 15px;
+            text-align: left;
+            color: #555;
+        }
+
+        .table th {
+            background: #f1f1f1;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .table td {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .table a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .table a:hover {
+            color: #0056b3;
+        }
+
+        .partner {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .partner_info img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .icon {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        .imgbtn {
+            text-align: center;
+        }
+        .imgbtn img {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .imgbtn button {
+            padding: 8px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .imgbtn button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+        footer span { font-size: 0.9em; }
+        footer p { margin-top: 15px; }
